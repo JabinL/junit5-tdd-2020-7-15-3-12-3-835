@@ -103,6 +103,20 @@ public class FizzBuzzTest {
 
     }
 
+    @Test
+    public void should_return_fizzbuzzwhizz_when_count_off_given_105(){
+
+        // given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // when
+        String result = fizzBuzz.play(105);
+
+        // then
+        assertEquals("FizzBuzzWhizz",result);
+
+    }
+
 
 
 }
