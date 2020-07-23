@@ -30,7 +30,7 @@ public class FizzBuzzTest {
         String result = fizzBuzz.play(3);
 
         // then
-        assertEquals("fizz",result);
+        assertEquals("Fizz",result);
 
     }
     @Test
@@ -43,9 +43,25 @@ public class FizzBuzzTest {
         String result = fizzBuzz.play(5);
 
         // then
-        assertEquals("buzz",result);
+        assertEquals("Buzz",result);
 
     }
+
+    @Test
+    public void should_return_whizz_when_count_off_given_7(){
+
+        // given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+
+        // when
+        String result = fizzBuzz.play(7);
+
+        // then
+        assertEquals("Whizz",result);
+
+    }
+
+
 
 
 }
